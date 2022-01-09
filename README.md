@@ -9,13 +9,13 @@ Cardiovascular disease (CVD) is the leading cause of deaths globally. An estimat
 
 The most important behavioral risk factors for heart disease and stroke are unhealthy diet, physical inactivity, tobacco use and excessive consumption of alcohol. The effects of these risk factors may manifest in individuals as high blood pressure, elevated blood glucose and lipids, and obesity. These “intermediate risks factors” can be measured in primary care facilities and indicate an increased risk of heart attack, stroke, heart failure and other complications.
 
-There are also a number of underlying determinants of CVD. These are a reflection of the major forces driving social, economic and cultural change –-globalization, urbanization and population aging. Other determinants of CVD include poverty, stress and hereditary factors.
+There are also a number of underlying determinants of CVD. These are a reflection of the major forces driving social, economic and cultural change --globalization, urbanization and population aging. Other determinants of CVD include poverty, stress and hereditary factors.
 
 ### Predicting Heart Failure?
 
 Heart failure is a common event caused by CVD and this dataset contains 11 features that can be used to predict possible heart disease.
 
-People with CVD or those who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established diseases) need early detection and management wherein a machine learning model could be of great help.
+People with CVD or those who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or other comorbidities) need early detection and management wherein a machine learning model could be of great help.
 
 #### Data dictionary:
 
