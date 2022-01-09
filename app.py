@@ -26,22 +26,22 @@ Cholesterol_transformer = pkl.load(open('./Model/Cholesterol_transformer.pickle'
 
 # Front end elements
 html_temp = """ 
-    <div style ="background-color:white; padding:13px"> 
-    <h1 style ="color:black; text-align:center">Healthy Heart</h1>
+    <div style ="background-color:white; padding:5px"> 
+    <h1 style ="color:black; text-align:center">Caring for your Heart</h1>
     <img src="https://cpb-eu-w2.wpmucdn.com/blogs.brighton.ac.uk/dist/f/6375/files/2019/12/website-pic-2.gif" alt="Stylized heart" style="width:100%;height:auto;"> 
     </div>
     <h3>Heart Disease</h3>
     <p> 
     Cardiovascular disease (CVD) is the leading cause of deaths globally. An estimated 18 million people died from CVD in 2019, accounting for about 32% of all deaths. Of those, 85% were due to heart attacks and strokes and about 30% occured in people under the age of 70.
     </p>
-    <h3>Risk factors for CVD?</h3>
+    <h3>Risk factors for CVD</h3>
     <p>
     The most important behavioral risk factors for heart disease and stroke are unhealthy diet, physical inactivity, tobacco use and excessive consumption of alcohol. The effects of these risk factors may manifest in individuals as high blood pressure, elevated blood glucose and lipids, and obesity. These “intermediate risks factors” can be measured in primary care facilities and indicate an increased risk of heart attack, stroke, heart failure and other complications.
     </p>
     <p>
     There are also a number of underlying determinants of CVD. These are a reflection of the major forces driving social, economic and cultural change --globalization, urbanization and population aging. Other determinants of CVD include poverty, stress and hereditary factors.
     </p>
-    <h3>Predicting Heart Failure?</h3>
+    <h3>Predicting Heart Failure</h3>
     <p>
     Heart failure is a common event caused by CVD and this prediction model contains 11 features that can be used to predict the risk of heart disease.
     </p>
@@ -49,7 +49,7 @@ html_temp = """
     People with CVD or those who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or other comorbidities) need early detection and management wherein a machine learning model can be of great help.
     </p>
 
-    <h5> For more information, please visit <a href=https://www.cdc.gov/heartdisease/facts.htm>www.cdc.gov/heartdisease/facts.htm!</a></h5>
+    <h5> For more information on CVD, please visit <a href=https://www.cdc.gov/heartdisease/facts.htm>www.cdc.gov/heartdisease/facts</a></h5>
     """
 
 st.markdown(html_temp, unsafe_allow_html = True) 
