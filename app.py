@@ -148,4 +148,8 @@ st.sidebar.info('Enter your information in each of the fields and click the "Pre
 st.sidebar.subheader("Disclaimer")
 st.sidebar.info('This web app does not provide medical advice. The information, including but not limited to, text, graphics, images and other material contained here are for informational purposes only. No material on this site is intended to be a substitute for professional medical advice, diagnosis or treatment.')
 
-st.sidebar.caption('by Roger Lefort--[thecyclingscientist.com](www.thecyclingscientist.com/)')
+# url = "www.thecyclingscientist.com/"
+# st.sidebar.caption('by Roger Lefort--[link](%s)' % url, unsafe_allow_html=True)
+
+link = '[Roger Lefort](http://www.thecyclingscientist.com/)'
+st.sidebar.caption('By ' + link, unsafe_allow_html=True)

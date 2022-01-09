@@ -2,20 +2,20 @@
 
 ![title](https://cpb-eu-w2.wpmucdn.com/blogs.brighton.ac.uk/dist/f/6375/files/2019/12/website-pic-2.gif)
 
-Cardiovascular disease (CVD) is the leading cause of death golabally. An estimated 18 million people died from CVD in 2019, accounting for about 32% of all deaths. Of those, 85% were due to heart attack and stroke and about 30% occured in people under the age of 70.
+Cardiovascular disease (CVD) is the leading cause of deaths globally. An estimated 18 million people died from CVD in 2019, accounting for about 32% of all deaths. Of those, 85% were due to heart attacks and strokes and about 30% occured in people under the age of 70.
 
 
 ### Risk factors for CVD?
 
 The most important behavioral risk factors for heart disease and stroke are unhealthy diet, physical inactivity, tobacco use and excessive consumption of alcohol. The effects of these risk factors may manifest in individuals as high blood pressure, elevated blood glucose and lipids, and obesity. These “intermediate risks factors” can be measured in primary care facilities and indicate an increased risk of heart attack, stroke, heart failure and other complications.
 
-There are also a number of underlying determinants of CVDs. These are a reflection of the major forces driving social, economic and cultural change – globalization, urbanization and population ageing. Other determinants of CVDs include poverty, stress and hereditary factors.
+There are also a number of underlying determinants of CVD. These are a reflection of the major forces driving social, economic and cultural change –-globalization, urbanization and population aging. Other determinants of CVD include poverty, stress and hereditary factors.
 
 ### Predicting Heart Failure?
 
-Heart failure is a common event caused by CVDs and this dataset contains 11 features that can be used to predict a possible heart disease.
+Heart failure is a common event caused by CVD and this dataset contains 11 features that can be used to predict possible heart disease.
 
-People with CVD or who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established disease) need early detection and management wherein a machine learning model can be of great help.
+People with CVD or those who are at high cardiovascular risk (due to the presence of one or more risk factors such as hypertension, diabetes, hyperlipidaemia or already established diseases) need early detection and management wherein a machine learning model could be of great help.
 
 #### Data dictionary:
 
