@@ -17,7 +17,7 @@ warnings.filterwarnings("ignore")
 # LOADING MODEL AND ENCODER/TRANSFORMER #
 #########################################
 
-st.set_page_config(page_title='Healthy Heart', layout='centered')
+st.set_page_config(page_title='Healthy Heart', layout='centered', page_icon='./Images/cardiology-red-icon-256.png')
 
 loaded_extraTree_model = pkl.load(open('./Model/final_model.pickle', 'rb'))
 loaded_encoder = pkl.load(open('./Model/feature_encoder.pickle', 'rb'))
@@ -28,7 +28,7 @@ Cholesterol_transformer = pkl.load(open('./Model/Cholesterol_transformer.pickle'
 html_temp = """ 
     <div style ="background-color:white; padding:13px"> 
     <h1 style ="color:black; text-align:center">Healthy Heart</h1>
-    <img src="https://cpb-eu-w2.wpmucdn.com/blogs.brighton.ac.uk/dist/f/6375/files/2019/12/website-pic-2.gif" alt="Stylized heart" style="width:675px;height:200px;"> 
+    <img src="https://cpb-eu-w2.wpmucdn.com/blogs.brighton.ac.uk/dist/f/6375/files/2019/12/website-pic-2.gif" alt="Stylized heart" style="width:100%;height:auto;"> 
     </div>
     <h3>Heart Disease</h3>
     <p> 
@@ -99,13 +99,13 @@ age = int(st.slider("Age (Years)", min_value=1, value=25, max_value=121))
 sex = st.radio('Select Gender (M: Male, F: Female)', ('M', 'F'))
 ChestPainType = st.selectbox('Chest Pain Type (TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic)', ("TA","ATA","NAP","ASY")) 
 restingBP = int(st.slider('Resting Blood Pressure (mm Hg)', min_value=10, value=100, max_value=240))
-RestingECG = st.selectbox('Resting Electrocardiographic Results [Normal: Normal, ST: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: showing probable or definite left ventricular hypertrophy by Estes criteria]: ', ("Normal", "ST", "LVH"))
+RestingECG = st.selectbox('Resting Electrocardiographic Results [Normal: Normal, ST: Having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV), LVH: Showing probable or definite left ventricular hypertrophy by Estes criteria]', ("Normal", "ST", "LVH"))
 cholesterol = int(st.slider('Serum Cholestoral (mg/dl)', min_value=1, value=100, max_value=500))
-fastingBS = st.radio('Fasting Blood Sugar (Y: if FastingBS > 120 mg/dl, N: otherwise)', ['Y','N'])
+fastingBS = st.radio('Fasting Blood Sugar (Y: If FastingBS > 120 mg/dl, N: Otherwise)', ['Y','N'])
 MaxHR = int(st.slider('Maximum Heart Rate Achieved', min_value=60, value=150, max_value = 240))
 ExerciseAngina = st.radio('Exercise Induced Angina (Y: Yes, N: No)',['Y','N'])
 Oldpeak = int(st.slider('Oldpeak--ST (Numeric value measured in depression)', min_value=-10, value=0, max_value = 10))
-stSlope = st.selectbox('Heart Rate Slope--the slope of the peak exercise ST segment (Up: upsloping, Flat: flat, Down: downsloping)', ("Up","Flat","Down"))
+stSlope = st.selectbox('Heart Rate Slope--the slope of the peak exercise ST segment (Up: Upsloping, Flat: Flat, Down: Downsloping)', ("Up","Flat","Down"))
 
 
 user_input = {
@@ -140,16 +140,13 @@ if st.button("Predict"):
 
 
 st.sidebar.subheader("About")
-st.sidebar.info('This web app is a tool to help you determine whether you are at a risk of developing cardiovascular heart disease.')
+st.sidebar.info('This web app is a tool to help you determine whether you are at risk of developing cardiovascular disease.')
 
 st.sidebar.subheader("How to use")
 st.sidebar.info('Enter your information in each of the fields and click the "Predict" button.')
 
 st.sidebar.subheader("Disclaimer")
 st.sidebar.info('This web app does not provide medical advice. The information, including but not limited to, text, graphics, images and other material contained here are for informational purposes only. No material on this site is intended to be a substitute for professional medical advice, diagnosis or treatment.')
-
-# url = "www.thecyclingscientist.com/"
-# st.sidebar.caption('by Roger Lefort--[link](%s)' % url, unsafe_allow_html=True)
 
 link = '[Roger Lefort](http://www.thecyclingscientist.com/)'
 st.sidebar.caption('By ' + link, unsafe_allow_html=True)
